@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ddiv, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+
+/* * { outline: 1px dotted red; }*/
+
+
+div.top{
+   
+    height: 48px;
+    background-color:#C1C1C1;
+    width: 740px;
+    margin: 0 auto;
+}
+   
+div.bottom{
+   
+   height: 48px;
+   background-color:#C1C1C1;
+   width: 740px;
+   margin: 0 auto;
+}
+div.container{
+    width: 740px;
+    min-height: 500px;
+    margin: 0 auto; 
+   
+}
+
+div.content{
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;  
+}
+div.box{
+    height: 140px;
+    width: 140px;
+    background-color: #9FC5F8;
+    margin: 20px;
+}
+h1{
+    margin: 0%;
+}
+    </style>
+</head>
+<body>
+
+
+
+   
+
+    
+
+
+
+    <div class="top"></div>
+   
+
+    <div class = container>
+        <h1>Welcome</h1> 
+        <p>Times: {{ times }}</p>
+        <div class="content">
+        {% for x in range(0,times): %}
+        <div class="box" style="background-color:{{ color }} ;"></div>
+        {% endfor %}
+
+    </div>
+
+    <div class =bottom> </div>
+    </div>
+
+</body>
+</html>
